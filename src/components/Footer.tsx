@@ -33,32 +33,21 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="hover:text-white transition-colors">
-                  Home
+                <a href="/about" className="hover:text-white transition-colors">
+                  About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="#event-highlights"
+                  href="/contact"
                   className="hover:text-white transition-colors"
                 >
-                  Event Highlights
+                  Contact
                 </a>
               </li>
               <li>
-                <a
-                  href="#schedule"
-                  className="hover:text-white transition-colors"
-                >
-                  Schedule
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#register"
-                  className="hover:text-white transition-colors"
-                >
-                  Register
+                <a href="/terms" className="hover:text-white transition-colors">
+                  Terms & Conditions
                 </a>
               </li>
             </ul>

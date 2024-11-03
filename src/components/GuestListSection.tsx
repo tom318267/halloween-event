@@ -94,7 +94,7 @@ const GuestListSection: React.FC = () => {
               <input
                 type="text"
                 id="name"
-                className="w-full text-[#333] border border-gray-300 p-3 rounded text-lg"
+                className="w-full text-[#333] border border-gray-300 p-3 rounded"
                 placeholder="Enter your name"
               />
             </div>
