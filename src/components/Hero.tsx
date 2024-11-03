@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative">
+    <section id="home" className="relative">
       {/* Fog layers */}
       <div className="absolute inset-0 overflow-hidden">
         <div
@@ -28,7 +28,12 @@ const Hero: React.FC = () => {
             thrill-seeker or looking for family-friendly activities, we have
             something for everyone.
           </p>
-          <button className="w-full md:w-auto mt-6 uppercase bg-green-500 hover:bg-green-500 text-black py-3 px-6 font-albertsans rounded-lg font-semibold shadow-lg transition-all hover:scale-105 transform duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)] hover:shadow-green-500">
+          <button
+            onClick={() =>
+              document.querySelector("#register")?.scrollIntoView()
+            }
+            className="w-full md:w-auto mt-6 uppercase bg-green-500 hover:bg-green-500 text-black py-3 px-6 font-albertsans rounded-lg font-semibold shadow-lg transition-all hover:scale-105 transform duration-200 hover:shadow-[0_0_20px_rgba(34,197,94,0.6)] hover:shadow-green-500"
+          >
             Join the party
           </button>
         </div>
