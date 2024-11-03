@@ -17,7 +17,7 @@ const EventHighlight: React.FC<EventHighlightProps> = ({
   className,
 }) => {
   return (
-    <div className="flex flex-col items-center text-center p-4">
+    <div className="flex flex-col items-center text-center p-8 md:p-0">
       <img
         src={imageSrc}
         alt={altText}

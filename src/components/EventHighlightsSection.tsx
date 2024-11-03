@@ -6,7 +6,7 @@ import EventHighlight from "./EventHighlight";
 const EventHighlightsSection: React.FC = () => {
   return (
     <section
-      className="bg-purple-900 py-[142px] relative"
+      className="bg-purple-900 py-[72px] md:py-[142px] relative"
       id="event-highlights"
       style={{
         backgroundColor: "#2C1D63", // Set the background color
@@ -19,7 +19,7 @@ const EventHighlightsSection: React.FC = () => {
           backgroundImage: "url('/images/halloweenbackground.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          opacity: 0.15, // Set the image opacity to 15%
+          opacity: 0.15,
           zIndex: 0,
         }}
       ></div>
@@ -30,7 +30,7 @@ const EventHighlightsSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-6xl md:text-7xl text-white text-center font-[nightscary] font-normal mb-8"
+          className="text-5xl md:text-7xl text-white text-center font-[nightscary] font-normal mb-8"
         >
           Event Highlights
         </motion.h2>

@@ -17,7 +17,7 @@ const GuestListSection: React.FC = () => {
   return (
     <section
       id="register"
-      className="flex justify-center items-center bg-gradient-to-br from-[#2D1B5A] via-[#3D2A6C] to-[#4B367E] min-h-screen p-4 sm:p-8"
+      className="flex justify-center py-[72px] md:py-[142px] items-center bg-gradient-to-br from-[#2D1B5A] via-[#3D2A6C] to-[#4B367E] min-h-screen p-4 sm:p-8"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -78,20 +78,23 @@ const GuestListSection: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex-1 bg-white p-6 lg:p-12 rounded-lg shadow-lg max-w-lg mx-auto lg:mx-0 mt-8 lg:mt-0"
+          className="flex-1 bg-white p-6 sm:p-8 lg:p-12 rounded-lg shadow-lg max-w-md md:max-w-lg w-full mx-auto lg:mx-0 mt-8 lg:mt-0"
         >
-          <h3 className="text-2xl lg:text-5xl font-[nightscary] text-[#333] font-normal text-center mb-4 lg:mb-6">
+          <h3 className="text-3xl lg:text-5xl font-[nightscary] text-[#333] font-normal text-center mb-6">
             Join the Party!
           </h3>
-          <form className="space-y-4" onSubmit={handleSubmit}>
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="name" className="block text-gray-700">
+              <label
+                htmlFor="name"
+                className="block text-gray-700 text-lg mb-2"
+              >
                 Name
               </label>
               <input
                 type="text"
                 id="name"
-                className="w-full text-[#333] border border-gray-300 p-2 rounded"
+                className="w-full text-[#333] border border-gray-300 p-3 rounded text-lg"
                 placeholder="Enter your name"
               />
             </div>
@@ -126,7 +129,7 @@ const GuestListSection: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full bg-orange-500 text-[#333] font-semibold py-2 rounded hover:bg-orange-600 transition-colors"
+              className="w-full bg-orange-500 text-[#333] font-semibold py-3 text-lg rounded hover:bg-orange-600 transition-colors"
             >
               Register
             </button>
