@@ -34,7 +34,7 @@ const EventHighlightsSection: React.FC = () => {
         >
           Event Highlights
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1256px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 max-w-[1256px] mx-auto">
           {[
             {
               imageSrc: "/images/house7.png",
