@@ -63,7 +63,6 @@ const EventHighlightsSection: React.FC = () => {
               title: "Costume Contest",
               description:
                 "Dress to impress and enter our epic costume contest. Categories include Scariest, Funniest, Best DIY, and Group costumes!",
-              className: "w-[158px]",
             },
             {
               imageSrc: "/images/live-music.png",
