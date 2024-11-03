@@ -48,7 +48,10 @@ const ScheduleList = ({
 
 const ScheduleSection = () => {
   return (
-    <section className="relative mx-auto py-[142px] h-100vh bg-[#D94814]">
+    <section
+      id="schedule"
+      className="relative mx-auto py-[142px] h-100vh bg-[#D94814]"
+    >
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}

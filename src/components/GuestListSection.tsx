@@ -3,13 +3,16 @@ import { motion } from "framer-motion";
 
 const GuestListSection: React.FC = () => {
   return (
-    <section className="flex justify-center items-center bg-[#2D1B5A] min-h-screen p-4 sm:p-8">
+    <section
+      id="register"
+      className="flex justify-center items-center bg-gradient-to-br from-[#2D1B5A] via-[#3D2A6C] to-[#4B367E] min-h-screen p-4 sm:p-8"
+    >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="flex flex-col lg:flex-row max-w-[1256px] items-center w-full bg-[#2D1B5A] text-white"
+        className="flex flex-col lg:flex-row max-w-[1256px] items-center w-full bg-transparent text-white"
       >
         {/* Left Section - Contact Information */}
         <motion.div

@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import EventHighlightsSection from "./components/EventHighlightsSection";
 import ScheduleSection from "./components/ScheduleSection";
 import GuestListSection from "./components/GuestListSection";
-
+import Footer from "./components/Footer";
 const App: React.FC = () => {
   return (
     <div
@@ -21,6 +21,8 @@ const App: React.FC = () => {
         <ScheduleSection />
         <GuestListSection />
       </main>
+
+      <Footer />
     </div>
   );
 };

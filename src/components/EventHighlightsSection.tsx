@@ -30,7 +30,7 @@ const EventHighlightsSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-7xl text-white text-center font-[nightscary] font-normal mb-8"
+          className="text-6xl md:text-7xl text-white text-center font-[nightscary] font-normal mb-8"
         >
           Event Highlights
         </motion.h2>
