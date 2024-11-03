@@ -21,8 +21,9 @@ const EventHighlight: React.FC<EventHighlightProps> = ({
       <img
         src={imageSrc}
         alt={altText}
-        className={`w-[229px] h-[280px] mb-4 ${className}`}
+        className={`w-[229px] h-auto mb-4 object-contain ${className}`}
       />
+
       <h3 className="text-xl font-bold text-white mb-2 object-cover">
         {title}
       </h3>
