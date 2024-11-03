@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 const GuestListSection: React.FC = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+
+    // Reset form after some time
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 5000);
+  };
+
   return (
     <section
       id="register"
@@ -71,7 +83,7 @@ const GuestListSection: React.FC = () => {
           <h3 className="text-2xl lg:text-5xl font-[nightscary] text-[#333] font-normal text-center mb-4 lg:mb-6">
             Join the Party!
           </h3>
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="block text-gray-700">
                 Name
@@ -105,6 +117,13 @@ const GuestListSection: React.FC = () => {
                 placeholder="Enter your phone number"
               />
             </div>
+
+            {isSubmitted && (
+              <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative">
+                <p>Thank you for registering! We'll see you at the party! 🎃</p>
+              </div>
+            )}
+
             <button
               type="submit"
               className="w-full bg-orange-500 text-[#333] font-semibold py-2 rounded hover:bg-orange-600 transition-colors"
