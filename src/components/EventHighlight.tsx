@@ -20,7 +20,7 @@ const EventHighlight: React.FC<EventHighlightProps> = ({
       <img
         src={imageSrc}
         alt={altText}
-        className={`w-[229px] h-[280px] mb-4`}
+        className={`w-[229px] h-[280px] mb-4 object-cover`}
       />
       <h3 className="text-xl font-bold text-white mb-2 object-cover">
         {title}

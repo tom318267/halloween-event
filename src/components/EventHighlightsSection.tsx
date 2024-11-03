@@ -70,7 +70,6 @@ const EventHighlightsSection: React.FC = () => {
               title: "Live Performances",
               description:
                 "Enjoy eerie live music and chilling performances, including Halloween-themed magic shows and dance-offs.",
-              className: "w-[290px]",
             },
             {
               imageSrc: "/images/scarydrink.png",
