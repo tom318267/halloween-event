@@ -16,9 +16,9 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content wrapper */}
-      <div className="relative flex flex-col md:flex-row items-center justify-between max-w-[1256px] mx-auto px-8 md:px-6">
+      <div className="relative flex flex-col py-12 md:flex-row items-center justify-between max-w-[1256px] mx-auto px-8 md:px-6">
         {/* Content Section */}
-        <div className="md:w-1/2 text-center md:text-left space-y-8 z-10 pt-16 md:pt-0">
+        <div className="md:w-1/2 text-center md:text-left space-y-12 z-10 pt-16 md:pt-0">
           <h1 className="text-6xl md:text-[90px] font-[nightscary] welcome animate-smooth-reveal">
             Welcome to the Fright Night Festival – Where the Night Comes Alive!
           </h1>
