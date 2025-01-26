@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content wrapper */}
-      <div className="relative flex flex-col py-12 md:flex-row items-center justify-between max-w-[1256px] mx-auto px-8 md:px-6">
+      <div className="relative flex flex-col py-12 md:flex-row items-center justify-between w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24">
         {/* Content Section */}
         <div className="md:w-1/2 text-center md:text-left space-y-12 z-10 pt-16 md:pt-0">
           <h1 className="text-6xl md:text-[90px] font-[nightscary] welcome animate-smooth-reveal">

@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 const App: React.FC = () => {
   return (
     <div
-      className="min-h-screen text-white"
+      className="min-h-screen text-white overflow-x-hidden"
       style={{
         background: "linear-gradient(180deg, #322658 0%, #6C53BE 100%)",
       }}

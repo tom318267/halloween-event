@@ -37,7 +37,7 @@ const Header: React.FC = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="flex justify-between items-center py-8 px-4 max-w-[1256px] mx-auto relative"
+      className="flex justify-between items-center py-8 w-full mx-auto px-4 sm:px-6 md:px-12 lg:px-16 xl:px-24"
     >
       <div className="text-2xl font-bold gap-3 flex items-center">
         <img src="/images/pumpkinlogo.svg" alt="" className="w-10" />
